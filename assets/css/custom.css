@@ -347,7 +347,7 @@ body {
     font-size: 15px;
     margin-right: 4px;
     padding-left: 4px;
-    border-left: 1px solid;
+    border-left: 2px solid #6745a2;
 }
 
 .FooterL::after {
