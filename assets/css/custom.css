@@ -1,0 +1,385 @@
+@font-face {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    src: url(../fonts/Oswald-Bold.ttf);
+}
+
+p {
+    font-size: 14px;
+    color: #000;
+}
+
+span,
+label,
+a,
+ul,
+li,
+p {
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    letter-spacing: 0.5px;
+    transition: all 0.5s;
+}
+
+* {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+    color: #aa4b88;
+}
+
+.pd0 {
+    padding: 0;
+}
+
+.ptop {
+    padding-top: 90px;
+}
+
+.pbottom {
+    padding-bottom: 90px;
+}
+
+.prz {
+    padding-right: 0px;
+}
+
+.plz {
+    padding-left: 0px;
+}
+
+.pos-reltive {
+    position: relative;
+}
+
+.mr50 {
+    margin-top: 50px;
+}
+
+.mrT70 {
+    margin-top: 70px;
+}
+
+.mrB50 {
+    margin-top: 70px;
+}
+
+ul {
+    padding: 0px;
+    list-style-type: none;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-y: hidden;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+}
+
+body {
+    background: url(../images/final.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    overflow-y: auto;
+}
+
+.TOPFinal {
+    height: calc(100% - 120px);
+}
+
+.MainTop {
+    text-align: center;
+}
+
+.TopImgs {
+    margin-bottom: 35px;
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+    .social-icon.text-white {
+        display: none;
+    }
+    .Mycontainer {
+        max-width: 540px;
+    }
+    .Mycol-sm-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .TopImgs {
+        margin-bottom: 35px;
+    }
+    .SpcH {
+        display: none;
+    }
+    .TopHeader {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-left: 23px;
+        padding-right: 23px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .social-icon.text-white {
+        display: none;
+    }
+    .Mycontainer {
+        max-width: 720px;
+    }
+    .Mycol-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .TopImgs {
+        margin-bottom: 35px;
+    }
+    .SpcH {
+        display: none;
+    }
+    .TopHeader {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-left: 23px;
+        padding-right: 23px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .Mycontainer {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .Mycontainer {
+        max-width: 1200px;
+    }
+}
+
+.Mycontainer {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+}
+
+.Myrow {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    width: 100%;
+    /* padding-bottom: 50px; */
+}
+
+.Mycol-sm-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.MainTopcart {
+    text-align: right;
+}
+
+.TopHeader {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 86%;
+    left: 7%;
+    right: 7%;
+}
+
+.TopTitle ul li {
+    display: inline-block;
+    height: 26px;
+    width: 25px;
+    background: #111111;
+    line-height: 26px;
+    border-radius: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    margin-left: 2px;
+    font-size: 10px;
+    color: #fff;
+}
+
+.TopTitle ul li a {
+    color: #fff;
+}
+
+.TopTitle ul li:hover {
+    background: #755ca7;
+}
+
+.TopTitle ul p {
+    color: #ffff;
+    display: inline-block;
+    font-size: 11px;
+}
+
+.Buy img {
+    width: 100%;
+}
+
+.TopTitle h2 {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 6px 0px;
+    position: relative;
+}
+
+.TopTitle h2:after {
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    content: "";
+    left: 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,755ca7+100 */
+    background: #ffffff;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #ffffff 0%, #755ca7 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #ffffff 0%, #755ca7 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #ffffff 0%, #755ca7 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#755ca7', GradientType=1);
+    /* IE6-9 */
+}
+
+.TopTitle h3 {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 6px 0px;
+    position: relative;
+}
+
+.TopTitle h3:after {
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    content: "";
+    left: 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,755ca7+100 */
+    background: #ffffff;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #ffffff 0%, #755ca7 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #ffffff 0%, #755ca7 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #ffffff 0%, #755ca7 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#755ca7', GradientType=1);
+    /* IE6-9 */
+}
+
+.TopTitle ul {
+    margin-top: 11px;
+}
+
+.TopBody {
+    margin-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+
+.FooterL {
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.FooterLi ul li {
+    display: inline-block;
+}
+
+.FooterLi ul li a {
+    color: #fff;
+}
+
+.FooterLi {
+    margin-right: auto;
+    text-align: right;
+}
+
+.FooterLi li img {
+    margin-right: 5px;
+}
+
+.follcus ul li a {
+    font-size: 15px;
+    margin-right: 8px;
+    padding-left: 3px;
+}
+
+.FooterL::after {
+    position: absolute;
+    top: -24px;
+    height: 1px;
+    background: #fff;
+    content: "";
+    width: 100%;
+    max-width: 872px;
+    right: 0;
+}
+
+.SpcH {
+    position: absolute;
+    top: 43%;
+    left: 8%;
+}
+
+.SpcH img {
+    width: 70%;
+}
+
+.SpcH:after {
+    position: absolute;
+    height: 185%;
+    width: 1px;
+    background: #fff;
+    content: "";
+    left: -10px;
+    top: -50%;
+}
+
+#product-component-1593548850853 {
+    height: 450px;
+}
