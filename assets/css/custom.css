@@ -345,8 +345,9 @@ body {
 
 .follcus ul li a {
     font-size: 14px;
-    margin-right: 1px;
-    padding-left: 1px;
+    margin-right: 0px;
+    padding-left: 2px;
+    border-left: 1px solid;
 }
 
 .FooterL::after {
