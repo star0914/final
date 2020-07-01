@@ -77,5 +77,15 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/collection.js"></script>
 
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        $(document).keydown(function(e){
+            if(e.which === 123){
+                return false;
+            }
+        });
+    </script>
 </body>
 </html>
