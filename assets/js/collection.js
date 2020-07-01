@@ -181,6 +181,8 @@
               // add gallery
               setTimeout(() => {
                   showMdl();
+                  $(".FooterL").css({"display": "block"});
+                  $(".loading-icon").css({"display": "none"});
               }, 2000);
           });
       }
