@@ -11,19 +11,15 @@
           loadScript();
       }
 
-      var is_cart = false;
-
       function loadScript() {
           var script = document.createElement('script');
           script.async = true;
           script.src = scriptURL;
           (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-          is_cart = false;
           script.onload = ShopifyBuyInit;
       }
 
-
-      function ShopifyBuyInit(is_cart) {
+      function ShopifyBuyInit() {
           var client = ShopifyBuy.buildClient({
               domain: 'tcb-management.myshopify.com',
               storefrontAccessToken: 'a1d1b537fe1ab7c3c1a4f093df1122ac',
@@ -182,7 +178,36 @@
                       }
                   },
               });
+              // add gallery
+              setTimeout(() => {
+                  showMdl();
+              }, 2000);
           });
       }
-  })();
+
+      var productImage;
+
+      function showMdl() {
+
+          var modal = document.getElementById("Gallery");
+          var modalImg = document.getElementById("gallery_img");
+          var galleryText = document.getElementById("gallery_txt");
+
+          productImage = $('iframe[name="frame-productSet-203506417829"]')[0].contentWindow.document.getElementsByClassName("shopify-buy__product-img-wrapper");
+          $(productImage).click(function () {
+              modal.style.display = "block";
+              modalImg.src = this.getElementsByTagName("img")[0].currentSrc;
+              galleryText.innerHTML = $(this).parent().find(".shopify-buy__product__title")[0].innerText;
+          });
+
+          // Get the <span> element that closes the modal
+          var span = modal.getElementsByClassName("close")[0];
+
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+              modal.style.display = "none";
+          }
+      }
+
+      })();
   /*]]>*/
