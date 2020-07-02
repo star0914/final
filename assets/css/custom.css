@@ -405,6 +405,7 @@ body {
     justify-content: center;
     align-items: center;
     position: fixed;
+    z-index: 2;
 }
 
 .loading-icon img{
