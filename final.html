@@ -37,7 +37,17 @@
                     <div class="col-md-3 col-sm-3 Mycol-12">
                     </div>
                     <div class="col-md-9 col-sm-9 Mycol-12">
-                        <div class="main-products" id="collection-component-1593554057594"></div>
+                        <div class="Myrow">
+                            <div class="col-md-4">
+                                <div class="main-products" id="product-component-1593802648673"></div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="main-products" id="product-component-159380329294"></div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="main-products" id="product-component-1593803415904"></div>
+                            </div>
+                        </div>
                         <div class="Myrow">
                             <div class="FooterL">
                                 <div class="row">
@@ -75,7 +85,37 @@
     </div>
 
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/collection.js"></script>
+    <script>
+        var productImage;
+
+        function showMdl(index) {
+
+            var modal = document.getElementById("Gallery");
+            var modalImg = document.getElementById("gallery_img");
+            var galleryText = document.getElementById("gallery_txt");
+
+            productImage = $('iframe')[index].contentWindow.document.getElementsByClassName("shopify-buy__product__variant-img");
+            // $(productImage).css({"min-height" : "250px", "max-height" : "250px"});
+            // $('iframe')[index].contentWindow.document.getElementsByClassName("shopify-buy__carousel").getElementsByTagName("a")[0].css({"min-height" : "70px", "max-height" : "70px"});
+
+            $(productImage).click(function () {
+                modal.style.display = "block";
+                modalImg.src = this.currentSrc;
+                galleryText.innerHTML = $(this).parent().find(".shopify-buy__product__title")[0].innerText;
+            });
+
+            // Get the <span> element that closes the modal
+            var span = modal.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script src="assets/js/product1.js"></script>
+    <script src="assets/js/product2.js"></script>
+    <script src="assets/js/product3.js"></script>
 
 </body>
 </html>
