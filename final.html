@@ -101,7 +101,8 @@
             $(productImage).click(function () {
                 modal.style.display = "block";
                 modalImg.src = this.currentSrc;
-                galleryText.innerHTML = $(this).parent().find(".shopify-buy__product__title")[0].innerText;
+                console.log(galleryText.innerHTML = $(this).parent().parent());
+                galleryText.innerHTML = $(this).parent().parent().parent().find(".shopify-buy__product__title")[0].innerText;
             });
 
             // Get the <span> element that closes the modal
