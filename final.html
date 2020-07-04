@@ -87,7 +87,6 @@
     <script src="assets/js/jquery.min.js"></script>
     <script>
         var productImage;
-
         function showMdl(index) {
 
             var modal = document.getElementById("Gallery");
@@ -95,8 +94,6 @@
             var galleryText = document.getElementById("gallery_txt");
 
             productImage = $('iframe')[index].contentWindow.document.getElementsByClassName("shopify-buy__product__variant-img");
-            // $(productImage).css({"min-height" : "250px", "max-height" : "250px"});
-            // $('iframe')[index].contentWindow.document.getElementsByClassName("shopify-buy__carousel").getElementsByTagName("a")[0].css({"min-height" : "70px", "max-height" : "70px"});
 
             $(productImage).click(function () {
                 modal.style.display = "block";
